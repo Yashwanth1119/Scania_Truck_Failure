@@ -1,0 +1,74 @@
+
+# Project information
+site_name: My Docs
+# defeine TOC or order of website-
+nav:
+  - Home: index.md
+  - test: page2.md
+
+site_author: Yashwanth
+site_description: >-
+  mkdocs template for documentation
+
+# Repository
+repo_name: Yashwanth1119
+repo_url: https://github.com/Yashwanth1119
+
+# Configuration
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime    
+  # logo: PyTorch_logo_icon.svg
+  
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Yashwanth1119
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tumburu-vijay-venkat-yashwanth-2b559021b/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/yashwanth_tumburu/
+
+extra_javascript:
+  - javascripts/mathjax.js
+  # - javascripts/tawk.js
+  - https://polyfill.io/v3/polyfill.min.js #?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  
+  
+plugins:
+  - search
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/Yashwanth1119"  target="_blank" rel="noopener">Yashwanth</a>
