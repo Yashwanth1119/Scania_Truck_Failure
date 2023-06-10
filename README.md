@@ -1,2 +1,2 @@
-# material-for-mkdocs
-Material for mkdocs
+# Sensor fault detection
+Machine Learning project
