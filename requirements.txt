@@ -1,3 +1,5 @@
 mkdocs-material
 pymongo[srv]==4.2.0
+certifi
+from-root
 -e .
