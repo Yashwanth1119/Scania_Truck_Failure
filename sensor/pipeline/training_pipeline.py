@@ -1,8 +1,11 @@
+import sys
+import os
+sys.path.insert(1, os.getcwd())
+
+
 from sensor.entity.config_entity import TrainingPipelineConfig, DataIngestionConfig
 from sensor.entity.artifact_entity import DataIngestionArtifact
 from sensor.exception import SensorException
-import sys
-import os
 from sensor.logger import logging
 from sensor.components.data_ingestion import DataIngestion
 
