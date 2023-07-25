@@ -7,7 +7,7 @@ import json
 from sensor.configuration.mongo_db_connection import MongoDBClient
 from sensor.constant.database import DATABASE_NAME
 from sensor.exception import SensorException
-
+from sensor.logger import logging
 
 class SensorData:
     """
@@ -46,17 +46,19 @@ class SensorData:
             export entire collectin as dataframe:
             return pd.DataFrame of collection
             """
+            logging.info("Starting Export")
             if database_name is None:
                 collection = self.mongo_client.database[collection_name]
             else:
                 collection = self.mongo_client[database_name][collection_name]
+            logging.info("Mongo COnnected")
             df = pd.DataFrame(list(collection.find()))
-
+            logging.info("df created")
             if "_id" in df.columns.to_list():
                 df = df.drop(columns=["_id"], axis=1)
-
+            logging.info("df id removed")
             df.replace({"na": np.nan}, inplace=True)
-
+            logging.info("Completed Exporting")
             return df
 
         except Exception as e:

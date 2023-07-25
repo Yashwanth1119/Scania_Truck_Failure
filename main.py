@@ -18,7 +18,7 @@ import csv
 import codecs
 import requests
 from fastapi import File, UploadFile
-import run
+
 
 
 app = FastAPI()
@@ -45,4 +45,12 @@ async def train_route():
         training_pipeline.run_pipeline()
     except Exception as e:
         return Response(f"Error Occured")
+
+
+    
+# try:
+#     training_pipeline = TrainPipeline()
+#     training_pipeline.run_pipeline()
+# except Exception as e:
+#     raise SensorException(e,sys)
     
