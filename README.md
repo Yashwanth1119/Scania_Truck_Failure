@@ -4,11 +4,7 @@
 
 An end-to-end machine learning project for detecting faults in wafer sensor
 
-[![GitHub license](./Readme_Assets/license-MIT-green.svg)](./LICENSE)
-[![GitHub forks](https://img.shields.io/github/forks/kannanjayachandran/Wafers-Fault-Detection?style=social)](https://GitHub.com/microsoft/ML-For-Beginners/network/)
-[![GitHub stars](https://img.shields.io/github/stars/kannanjayachandran/Wafers-Fault-Detection?style=social)](https://github.com/kannanjayachandran/Wafers-Fault-Detection/stargazers/)
 
-<img src="./Readme_Assets/semi.png" width="200" height="200">
 
 </div>
 
@@ -33,12 +29,6 @@ An end-to-end machine learning project for detecting faults in wafer sensor
 ### 3. Solution
 
 > The solution is to build a machine learning model that can predict whether the wafer is faulty or not and thus identify the wafers that need to be sent to the rework process. The model will be deployed on a web application.
-
-## Architecture of the solution
-
-<div align="center">
-<img src="./Readme_Assets/Arch.png" width="700" height="600">
-</div>
 
 **Detailed explanation of the complete project is given in the [Project Structure](./Readme_Assets/Structure.md) It contains the documentation of the project.**
 
